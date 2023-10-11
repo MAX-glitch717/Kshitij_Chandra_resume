@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSHITIJ CHANDRA's Resume</title>
     <style>
         body {
-            font-family: 'Calibri', sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
             margin: 40px;
             line-height: 1.6;
+            color: #333;
         }
 
-        h1, h2, h3 {
-            margin-bottom: 20px;
+        h1 {
+            color: #007acc;
+        }
+
+        h2, h3 {
+            margin-top: 1.5rem;
+            animation: fadeIn 1s;
         }
 
         ul {
@@ -24,71 +32,116 @@
             margin-bottom: 10px;
         }
 
-        .contact-info a {
-            margin-right: 20px;
+        a {
+            color: #007acc;
             text-decoration: none;
-            color: #333;
         }
 
-        .contact-info a:hover {
+        a:hover {
             text-decoration: underline;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            animation: slideIn 1s;
         }
 
         .section {
             margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1.2s;
         }
 
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+        .section-content div:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <h1>KSHITIJ CHANDRA</h1>
 <p class="contact-info">
-    DUBLIN, IRELAND | +353 892040946 | <a href="mailto:kchandra@tcd.ie">kchandra@tcd.ie</a> | 
+    DUBLIN, IRELAND | +353 892040946 | <a href="mailto:kchandra@tcd.ie">kchandra@tcd.ie</a> |
     <a href="#">Github: MAX-glitch717</a> | <a href="#">LinkedIn: KC</a>
 </p>
 
 <div class="section">
     <h2>EDUCATION</h2>
-    <h3>Trinity College Dublin | September 2021 - May 2024</h3>
-    <ul>
-        <li>Computer Engineering</li>
-        <li>Main courses: Digital Signal Processing, Probability and Statistics, Advanced Mathematics, Data Structures</li>
-        <li>2+2 integrated program with Thapar university</li>
-    </ul>
-    <h3>Thapar University | August 2019 - August 2021</h3>
-    <ul>
-        <li>B.A.I Computer Engineering</li>
-        <li>CGPA: 8.08/10</li>
-        <li>Awarded scholarship for excellent academic performance</li>
-    </ul>
+    <div class="section-content">
+        <div>
+            <h3>Trinity College Dublin</h3>
+            <p>September 2021 - May 2024</p>
+            <ul>
+                <li>Computer Engineering</li>
+                <li>Main courses: Digital Signal Processing, Probability and Statistics, Advanced Mathematics, Data Structures</li>
+                <li>2+2 integrated program with Thapar university</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Thapar University</h3>
+            <p>August 2019 - August 2021</p>
+            <ul>
+                <li>B.A.I Computer Engineering</li>
+                <li>CGPA: 8.08/10</li>
+                <li>Awarded scholarship for excellent academic performance</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <div class="section">
-    <!-- Add other WORK EXPERIENCE details similarly -->
+    <h2>EXPERIENCE</h2>
+    <div class="section-content">
+        <!-- Experience data here -->
+    </div>
 </div>
 
 <div class="section">
-    <h2>PROJECTS</h2>
-    <!-- Add other PROJECT details similarly -->
+    <h2>JOBS</h2>
+    <div class="section-content">
+        <!-- Jobs data here -->
+    </div>
 </div>
 
 <div class="section">
     <h2>SKILLS</h2>
-    <div class="skills">
-        <div>
-            <h3>Programming</h3>
-            <ul>
-                <li>Python</li>
-                <li>C/C++</li>
-                <!-- ... other programming skills -->
-            </ul>
-        </div>
-        <!-- Add other SKILLS categories similarly -->
+    <div class="section-content">
+        <!-- Skills data here -->
     </div>
 </div>
 
