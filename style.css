@@ -48,3 +48,10 @@ footer a, footer nav a {
     text-decoration: none;
     margin: 0 10px;
 }
+
+/* Initially set the opacity to 0 for the fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+
