@@ -54,20 +54,35 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: Stock Prediction
+        link: github.com/max-glitch717/Stock-Prediction
         # link_text: Project Website
         additional_links:
           - title:  sproogen/modern-resume-theme
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+            url: https://github.com/MAX-glitch717/Stock-prediciton
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          stock prediction using LSTM
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Developed a stock prediction program using LSTM to predict stock closing prices.The program fetches historical stock data using the Yahoo Finance API, scales the data, trains an LSTM model on the training data, and then predicts the stock prices on the test data.
+        
+        title: Stock Prediction
+        link: github.com/max-glitch717/Stock-Prediction
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: https://github.com/MAX-glitch717/Stock-prediciton
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          stock prediction using LSTM
+        description: | # this will include new lines to allow paragraphs
+          Developed a stock prediction program using LSTM to predict stock closing prices.The program fetches historical stock data using the Yahoo Finance API, scales the data, trains an LSTM model on the training data, and then predicts the stock prices on the test data.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
