@@ -68,8 +68,8 @@ content:
           stock prediction using LSTM
         description: | # this will include new lines to allow paragraphs
           Developed a stock prediction program using LSTM to predict stock closing prices.The program fetches historical stock data using the Yahoo Finance API, scales the data, trains an LSTM model on the training data, and then predicts the stock prices on the test data.
-        
-        title: Stock Prediction
+      - layout: top-middle
+        title: Stock 
         link: github.com/max-glitch717/Stock-Prediction
         # link_text: Project Website
         additional_links:
